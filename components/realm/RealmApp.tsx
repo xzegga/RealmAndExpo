@@ -25,9 +25,6 @@ export function RealmApp({children}:{children: React.ReactNode}) {
                     },
                     initialSubscriptions: {
                         update(subs, realm) {
-                            subs.add(realm.objects('Crop'));
-                            subs.add(realm.objects('Category'));
-                            subs.add(realm.objects('CropIssues'));
                         },
                     },
                 }
